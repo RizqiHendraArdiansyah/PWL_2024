@@ -1,25 +1,35 @@
 **JOBSHEET 7 LARAVEL STARTER CODE**
+
 Nama : Rizqi Hendra Ardiansyah
+
 Kelas : SIB-3C
+
 NIM 2141762145
+
 Mata Kuliah : Pemrograman Web Lanjut
+
 Jurusan : Teknologi Informasi
+
 Program Studi : D4 – Sistem Informasi Bisnis
+
 
 *Praktikum 1 – Layouting AdminLTE:*
 1. Kita download AdminLTE v3.2.0 yang rilis pada 8 Feb 2022
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/45700190-d8ae-414d-a36f-249f99222323)
 
 2.	Setelah kita berhasil download, kita ekstrak file yang sudah di download ke folder project PWL_POS/public, kemudian kita rename folder cukup menjadi adminlte
+
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/76007e92-10fd-49cf-acb3-30fd2ac3a249)
 
 3.	Selanjutnya kita buka di browser dengan alamat http://localhost/PWL_POS/public/adminlte maka akan muncul tampilan seperti berikut
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/6f9cc1be-ab9b-434c-a0d8-5006b3e4c4dd)
 
 4.	Kita klik menu Extras > Blank Page, page inilah yang akan menjadi dasar web template
+
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/d1cf2dad-c594-40a3-a603-8487bf4edff7)
 
 5.	Dari sini kita bisa melakukan layouting halaman Blank Page ini menjadi 4 element seperti pada gambar berikut
+
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/cf21fa8c-358f-41ae-96c0-3ca41e2cbf1e)
 
 6.	Selanjutnya kita klik kanan halaman Blank Page dan klik view page source![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/d8d5423f-d486-4977-bd59-e3aa01421b6c)
@@ -31,12 +41,14 @@ Program Studi : D4 – Sistem Informasi Bisnis
 	![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/ef754944-963f-4a6e-b239-47c9431adca5)
 
 10.	Kemudian kita blok baris 19-153 (baris untuk element 1-header), lalu kita cut, dan paste-kan di file PWL_POS/resource/view/layouts/header.blade.php (buat dulu file header.blade.php jika belum ada). Sehingga tampilan dari file template.blade.php menjadi seperti berikut
+    
 a.	Layout pada header.blade.php
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/60369085-6603-4d93-80a2-9b7bf08475f0)
 
 b.	Layout pada template.blade.php
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/3bd6f9d5-bbe7-4e66-acc8-7ce9c65649ed)
 Baris 19 adalah komponen Blade untuk memanggil elemen layouts/header.blade.php agar menjadi satu dengan template.blade.php saat di-render nanti
+
 11.	Kita modifikasi baris 25 dan 26 pada template.blade.php
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/fa1c4c59-1c69-4fa9-a950-27ec9b4ea3ef)
 
@@ -106,6 +118,7 @@ Baris 19 adalah komponen Blade untuk memanggil elemen layouts/header.blade.php a
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/d781a02a-f3d2-4a21-98f1-c5a6acc6c64c)
 
 8.	Sekarang coba jalankan browser, dan klik menu Data User..!!! perhatikan dan amati apa yang terjadi 
+
 Jawab : Berdasarkan pengamatan disini yang tampil pada daftar user sebagai berikut
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/ee8e11f8-7a93-4dd1-b601-355f35e1ef1c)
 
@@ -198,3 +211,72 @@ Bisa kita lihat data tersebut berhasil kita hapus
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/03e0c27a-7963-459f-b4d4-e2a6ee5d62d0)
 
 6.	Bagian akhir adalah kita coba jalankan di browser dengan akses menu user, maka akan tampil seperti berikut
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/d90b4f93-4e13-404d-b54d-31641e770430)
+
+**Pertanyaan**
+
+Jawablah pertanyaan berikut sesuai pemahaman materi di atas
+1. Apa perbedaan frontend template dengan backend template?
+2. Apakah layouting itu penting dalam membangun sebuah website?
+3. Jelaskan fungsi dari komponen laravel blade berikut : @include(), @extend(), @section(), @push(), @yield(), dan @stack()
+4. Apa fungsi dan tujuan dari variable $activeMenu ?
+   
+Jawab :
+
+1. Frontend template berkaitan langsung pada tampilan seperti desain antarmuka pengguna, elemen visual, dan pengalaman pengguna. Sedangkan pada backend template berkaitan dengan server dan database yang menangani logika dari suatu web, pengelolaan basis data, dan pemrosesan data yang nantinya memastikan bahwa data yang diperlukan dikirim ke frontend untuk ditampilkan dan disimpan dengan benar di database.
+   
+2. Tentu saja, layouting sangat penting dalam membangun sebuah website. Layout website sendiri berperan untuk menentukan struktur tata letak pada halaman website, sehingga nantinya dapat berperan penting dalam hal pengalaman client / pengguna
+  
+3. Berikut adalah fungsi dari komponen laravel berikut :
+   
+   a. @include() : Digunakan untuk memasukkan isi dari satu view ke dalam view lain
+   
+   b. @extend() : Memungkinkan sebuah view “mewarisi/menambah” layout dari view lain.
+   
+   c.  @section() : Mendefinisikan bagian konten yang dapat kita “isi” di dalam layout yang diwarisi.
+   
+   d.  @push() : Memungkinkan Anda menambahkan konten ke dalam “stack”, yang biasanya digunakan untuk skrip atau style yang spesifik pada halaman tertentu.
+   
+   e.  @yield() : Menentukan tempat layout di mana konten dari @section() akan ditampilkan.
+   
+   f.  @stack() : Bertindak sebagai wadah untuk menumpuk konten yang telah di-push. Hal Ini memungkinkan untuk mengorganisir skrip atau style yang ditambahkan melalui @push() dan menampilkannya di tempat yang diinginkan di layout
+   
+5. Fungsi dari variabel ini adalah untuk menandai menu atau navigasi yang sedang aktif pada saat itu. Tujuannya adalah untuk memberikan feedback visual kepada pengguna tentang halaman atau bagian dari aplikasi yang sedang mereka lihat.
+
+**TUGAS**
+1. Implementasikan menu yang belum ada di laravel starter code ini sesuai dengan Studi Kasus Point of Sales Sederhana. Silahkan terapkan kode di laravel starter code untuk menu-menu yang sesuai dengan menu di samping ini.
+   
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/3eebc221-be4e-420a-82b3-23ef70b5f9d6)
+
+*Jawab*
+1. Halaman Menu Dashboard
+   
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/0650bf28-b47a-4d82-9633-cd8502364035)
+
+2. Halaman Menu Daftar Level
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/a1257972-c855-452a-b092-74f84d2ca11c)
+
+3. Halaman Menu Daftar User
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/7d4238f8-91af-4ef2-b97a-d5f7baf4e1dd)
+
+5. Halaman Menu Daftar Kategori 
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/dda8735b-165c-4d53-8e8a-d16cb229146f)
+
+4. Halaman Menu Daftar Barang
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/f3e662db-39a4-43a9-bcf5-16bf0842e374)
+
+5. Halaman Menu Daftar Stok Barang
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/484ca3eb-8d6e-470d-b09f-3c4035048898)
+
+6. Halaman Menu Daftar Transaksi Penjualan
+
+![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/634bd3b6-9c67-434f-959d-24ae9cd44f50)
+
+
+
+
