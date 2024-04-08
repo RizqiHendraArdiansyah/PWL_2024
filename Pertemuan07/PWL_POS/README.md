@@ -261,19 +261,19 @@ Jawab :
 
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/7d4238f8-91af-4ef2-b97a-d5f7baf4e1dd)
 
-5. Halaman Menu Daftar Kategori 
+4. Halaman Menu Daftar Kategori 
 
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/dda8735b-165c-4d53-8e8a-d16cb229146f)
 
-4. Halaman Menu Daftar Barang
+5. Halaman Menu Daftar Barang
 
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/f3e662db-39a4-43a9-bcf5-16bf0842e374)
 
-5. Halaman Menu Daftar Stok Barang
+6. Halaman Menu Daftar Stok Barang
 
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/484ca3eb-8d6e-470d-b09f-3c4035048898)
 
-6. Halaman Menu Daftar Transaksi Penjualan
+7. Halaman Menu Daftar Transaksi Penjualan
 
 ![image](https://github.com/RizqiHendraArdiansyah/PWL_2024/assets/91880173/634bd3b6-9c67-434f-959d-24ae9cd44f50)
 
